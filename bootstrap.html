@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background: #ff758c;
+        }
+        .navbar-brand, .nav-link {
+            color: rgb(45, 40, 40) !important;
+
+        }
+        .hero-section {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        .card {
+            transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            flex-grow: 1;
+        }
+        .card-text {
+            overflow: hidden;
+            max-height: 80px;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .card-text.expanded {
+            max-height: 1000px;
+        }
+        footer {
+            background: #ff758c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tales World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div>
+            <h1>Welcome to Tales World</h1>
+            <p>Discover a world of amazing stories for all ages.</p>
+        </div>
+    </header>
+    
+    <!-- Stories Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="d:\Visual Studio\Bootstrap\previewImage._CC3.jpg" class="card-img-top" alt="Story Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jack and the Beanstalk</h5>
+                        <p class="card-text">Jack’s tired of milking his old cow, so he decides to sell her at the market. On the way, a peddler convinces Jack to trade the cow for magic beans, and his mother’s none too happy about it. When she tosses the beans out the window and a beanstalk shoots up into the sky, Jack just can’t resist finding out what’s at the top—a giant castle! There he finds a goose that can lay golden eggs, and . . . what’s that? “Fee fi fo fummy!” It’s a giant that thinks Jack smells “yum, yum, yummy!” But when the giant follows Jack down the beanstalk, Jack and the giant find a way to become friends.</p>
+                        <a href="#" class="btn btn-danger read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="D:\Visual Studio\Bootstrap\previewImage.3819T_.png" class="card-img-top" alt="Story Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Goldilocks and the Three Bears</h5>
+                        <p class="card-text">Goldilocks has sproingy, golden locks and loves to skip! One day, she skips her way to the cutest, coziest cottage she's ever seen, where she smells the yummiest porridge from inside! This makes her already-hungry tummy rumble even louder! Join Goldilocks in this new take on a beloved classic as she gets carried away in the three bears’ cottage. What do you think the three bears will do when they find the girl who’s eaten their porridge, sat in their chairs, and fell asleep in the bed that’s “just right”?</p>
+                        <a href="#" class="btn btn-warning read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <img src="D:\Visual Studio\Bootstrap\previewImage_22.2kJHO8.jpg" class="card-img-top" alt="Story Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Night Boy</h5>
+                        <p class="card-text">Night can’t wait to play a game of hide and seek with his sister, Day. When sunset arrives, he is so excited to play. He throws the moon into place and blankets the sky into darkness. With his teddy bear, he flies into space, painting the skies with planets and stars. He forgets about the game with his sister until sunrise, when they meet again.</p>
+                        <a href="#" class="btn btn-success read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Tales World. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                let text = this.previousElementSibling;
+                text.classList.toggle('expanded');
+                this.textContent = text.classList.contains('expanded') ? 'Read Less' : 'Read More';
+            });
+        });
+    </script>
+</body>
+</html>
