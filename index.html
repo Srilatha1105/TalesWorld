@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tales World</title>
+    <link rel="icon" href="Book.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(to right, #ff9a9e, #fad0c4);
             font-family: 'Arial', sans-serif;
         }
-        .navbar {
+        .navbar { 
             background: #ff758c;
         }
-        .navbar-brand, .nav-link {
+        .navbar-brand,.nav-link {
             color: rgb(45, 40, 40) !important;
 
         }
@@ -64,7 +65,6 @@
 }
 
         .card {
-            transition: transform 0.3s;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -73,7 +73,10 @@
             transform: scale(1.05);
         }
         .card-body {
-            flex-grow: 1;
+            flex-grow: 1; /* Ensures content stretches to fill available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Pushes the button to the bottom */
         }
         .card-text {
             overflow: hidden;
@@ -179,7 +182,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card shadow-lg">
-                    <img src="previewImage._CC3.jpg" class="card-img-top" alt="Story Image">
+                    <img src="previewImage._CC3.jpg" class="card-img-top" >
                     <div class="card-body text-center">
                         <h5 class="card-title">Jack and the Beanstalk</h5>
                         <p class="card-text">Jack’s tired of milking his old cow, so he decides to sell her at the market. On the way, a peddler convinces Jack to trade the cow for magic beans, and his mother’s none too happy about it. When she tosses the beans out the window and a beanstalk shoots up into the sky, Jack just can’t resist finding out what’s at the top—a giant castle! There he finds a goose that can lay golden eggs, and . . . what’s that? “Fee fi fo fummy!” It’s a giant that thinks Jack smells “yum, yum, yummy!” But when the giant follows Jack down the beanstalk, Jack and the giant find a way to become friends.</p>
@@ -189,7 +192,7 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card shadow-lg">
-                    <img src="previewImage.3819T_.png" class="card-img-top" alt="Story Image">
+                    <img src="previewImage.3819T_.png" class="card-img-top" >
                     <div class="card-body text-center">
                         <h5 class="card-title">Goldilocks and the Three Bears</h5>
                         <p class="card-text">Goldilocks has sproingy, golden locks and loves to skip! One day, she skips her way to the cutest, coziest cottage she's ever seen, where she smells the yummiest porridge from inside! This makes her already-hungry tummy rumble even louder! Join Goldilocks in this new take on a beloved classic as she gets carried away in the three bears’ cottage. What do you think the three bears will do when they find the girl who’s eaten their porridge, sat in their chairs, and fell asleep in the bed that’s “just right”?</p>
@@ -199,7 +202,7 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card shadow-lg">
-                    <img src="previewImage_22.2kJHO8.jpg" class="card-img-top" alt="Story Image">
+                    <img src="previewImage_22.2kJHO8.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5 class="card-title">Night Boy</h5>
                         <p class="card-text">Night can’t wait to play a game of hide and seek with his sister, Day. When sunset arrives, he is so excited to play. He throws the moon into place and blankets the sky into darkness. With his teddy bear, he flies into space, painting the skies with planets and stars. He forgets about the game with his sister until sunrise, when they meet again.</p>
@@ -207,21 +210,55 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mx-2">
-        <div class="card shadow-lg">
-                <img src="Image 4.jpg" class="card-img-top" alt="Story Image">
-                <div class="card-body text-center">
+           
+            <div class="row gx-3 gy-4 justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-lg">
+                  <img src="Image 4.jpg" class="card-img-top">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Little Red Riding Hood</h5>
                     <p class="card-text">Granny is sick, so Little Red Riding Hood goes to visit taking a basket of food. Wolf, though, sees Little Red, and he is determined to use every trick he can to get the basket of food for himself. It turns out, Wolf has a good reason for his trickery: he wants to help HIS grandmother! Here’s our novel take on a classic tale.</p>
-                    <a href="#" class="btn btn-success read-more">Read More</a>
+                    <a href="#" class="btn btn-danger read-more">Read More</a>
+                  </div>
                 </div>
             </div>
-        </div>
+      
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-lg">
+                    <img src="Image 5.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Goldilocks</h5>
+                        <p class="card-text">“Oh no, Goldilocks! What were you thinking? The Three Bears’ house is no place to be in!” But in this new musical spin of the classic tale by Debbie and Friends, “Goldilocks and the Three Bears,” Goldilocks is so hungry and tired that she doesn’t listen. She tries the Three Bears’ porridge, their chairs, and their beds. Then she gets a surprise of her own when the Three Bears come home.</p>
+                        <a href="#" class="btn btn-warning read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-lg">
+                    <img src="Image 6.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Superkids Princess Problems</h5>
+                        <p class="card-text">Princess Esme and her pet unicorn Glitter live in the beautiful kingdom of Bellavilla. Princess Esme is very kind; kindness makes her twinkle, sparkle, and shine. One day, grumpy Knight No-No gets upset and doesn’t want to protect the kingdom anymore. To Princess Esme, protecting the kingdom is important and a very kind thing to do, but Knight No-No doesn’t want to be kind. In fact, he doesn’t want anyone to be kind and declares that kindness is a big no-no before locking Princess Esme and Glitter in the dungeon! Read along to see how the SuperKids, Princess Esme, and Glitter need your help!</p>
+                        <a href="#" class="btn btn-success read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-lg">
+                    <img src="Image 7.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> Gratitude</h5>
+                        <p class="card-text">Sing along with this Speakaboos original song about the things that make thankful Theo grateful. He wakes up in the morning, and the first thing he’s grateful for is his dog’s friendship as he runs up to him to play! And so starts his day of being thankful. He’s grateful for the librarian that encourages him to read and makes him laugh, and for his family that loves him and spends time with him. When Theo’s grateful, he says, “Thank you!” What are you grateful for?</p>
+                        <a href="#" class="btn btn-danger read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </div>
     </div>
-    </div>    
-
-    
+       
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
